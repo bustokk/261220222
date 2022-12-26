@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Bir sayı giriniz : ");
+        int sayi; 
+        int sonuc = 0;
+        sayi = Convert.ToInt32(Console.ReadLine());
+        while (sayi > 0)
+        {
+            sonuc += sayi % 10;
+            sayi /= 10;
+        }
+        Console.WriteLine("Girilen sayının rakamları toplamı : " + sonuc);
+        Console.ReadKey();
+    }
+}
